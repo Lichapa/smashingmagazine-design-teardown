@@ -1,6 +1,7 @@
 body {
   width: 100%;
   margin: 0;
+  font-family: sans-serif;
 }
 
 header {
@@ -56,6 +57,17 @@ nav > a:hover {
   margin-left: 0;
 }
 
+#title{
+  text-align: center;
+  font-size: 40px;
+  width: 480px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  left: 30%;
+  top: 18%;
+}
+
 .profiles {
   display: flex;
   flex-wrap: wrap;
@@ -65,9 +77,9 @@ nav > a:hover {
   display: flex;
   flex-direction: column;
   width: 50%;
-  background-color: darkgrey;
+  background: linear-gradient(to bottom left, lightgrey, grey);
   color: white;
-  height: 500px;
+  height: 600px;
 }
 
 .profile p,
@@ -77,10 +89,15 @@ nav > a:hover {
 }
 
 .profile figure img {
+  margin-top: 150px;
   width: 70px;
   height: 70px;
   border-radius: 6px;
   transform: rotate(-20deg);
+}
+
+.profile figure img:hover {
+  transform: rotate(0);
 }
 
 ul {
@@ -103,4 +120,25 @@ ul li {
 
 .italic {
   font-style: italic;
+}
+
+.display-inline-block{
+  display: inline-block;
+}
+
+figcaption {
+  padding-left: 15px;
+}
+.grid-1{
+  display: grid;
+  grid-template-columns: repeat(3, 28%);
+  margin-top: 20px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.grid-1 > div:hover{
+  width: 110%;
+  z-index: 2;
+  box-shadow: 5px 5px;
 }
