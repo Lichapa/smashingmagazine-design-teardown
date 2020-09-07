@@ -1,9 +1,9 @@
-body{
+body {
   width: 100%;
   margin: 0;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-around;
   background-color: rgb(218, 218, 218);
@@ -13,16 +13,15 @@ header{
   padding-bottom: 1%;
 }
 
-.margin-top1{
-   margin-top: 1%;
+.margin-top1 {
+  margin-top: 1%;
 }
 
-.height-100{
+.height-100 {
   height: 100%;
 }
 
-nav{
-
+nav {
 }
 
 nav > a {
@@ -39,20 +38,69 @@ nav > a:hover {
   background-color: rgb(48, 48, 51);
 }
 
-.more-button{
+.more-button {
   border-radius: 6px;
   background-color: rgb(48, 48, 51);
 }
 
-.nav-search{
+.nav-search {
   margin-left: 0;
 }
 
-#search-input{
+#search-input {
   height: 80%;
   width: 300px;
   vertical-align: middle;
   border-radius: 6px;
   border-style: none;
   margin-left: 0;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: darkgrey;
+  color: white;
+  height: 500px;
+}
+
+.profile p,
+.profile h1,
+.profile figure {
+  padding-left: 10%;
+}
+
+.profile figure img {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  transform: rotate(-20deg);
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  padding-left: 10%;
+}
+
+ul li {
+  padding-right: 15px;
+}
+
+.black {
+  color: black;
+}
+
+.arrow {
+  font-size: 3em;
+}
+
+.italic {
+  font-style: italic;
 }
