@@ -57,7 +57,7 @@ nav > a:hover {
   margin-left: 0;
 }
 
-#title{
+#title {
   text-align: center;
   font-size: 40px;
   width: 480px;
@@ -114,6 +114,33 @@ ul li {
   color: black;
 }
 
+.white {
+  color: white;
+}
+
+.border-6px {
+  border-radius: 6px;
+  border: 0;
+  padding: 10px;
+}
+
+.large {
+  font-size: 15px;
+}
+.larger {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.very-large {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.text-left {
+  text-align: left;
+}
 .arrow {
   font-size: 3em;
 }
@@ -122,14 +149,18 @@ ul li {
   font-style: italic;
 }
 
-.display-inline-block{
+.underline {
+  text-decoration: underline;
+}
+
+.display-inline-block {
   display: inline-block;
 }
 
 figcaption {
   padding-left: 15px;
 }
-.grid-1{
+.grid-1 {
   display: grid;
   grid-template-columns: repeat(3, 28%);
   margin-top: 20px;
@@ -137,8 +168,97 @@ figcaption {
   width: 100%;
 }
 
-.grid-1 > div:hover{
+/* .grid-1 > div:hover{
   width: 110%;
   z-index: 2;
   box-shadow: 5px 5px;
+}
+ */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 800px 400px;
+  grid-template-rows: auto;
+  margin-top: 20px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.grid-2-first {
+  background-color: #5a5a5a;
+  color: #fff;
+  border-radius: 10px;
+  padding: 40px 70px 20px 70px;
+}
+
+.grid-2-add {
+  background-color: #979797;
+  color: rgb(46, 46, 46);
+  border-radius: 10px;
+  padding: 20px 40px 20px 40px;
+  /* height: 150px; */
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.latest-article {
+  margin-top: 100px;
+  width: 1440ox;
+  text-align: center;
+  height: 150px;
+}
+
+.shipping {
+  /*  width: 100%; */
+  background-color: rgb(77, 77, 77);
+  text-align: center;
+  padding: 40px 23%;
+}
+
+.articles1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-line1 {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 10%;
+  align-items: flex-end;
+}
+
+.article-line-photo img {
+  width: 150px;
+  height: 150px;
+  margin-right: 40px;
+  border: solid 4px black;
+  transform: rotate(-20deg);
+}
+
+.article-line2 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(4, 30%);
+  margin-top: 20px;
+  justify-content: space-around;
+  text-align: center;
+}
+.article-line2-small {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10%;
+  align-items: center;
+}
+
+.article-line-photo-small img {
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+  border: solid 4px black;
+  transform: rotate(-20deg);
 }
