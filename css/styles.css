@@ -205,7 +205,7 @@ figcaption {
 }
 
 .latest-article {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 1440ox;
   text-align: center;
   height: 150px;
@@ -261,4 +261,44 @@ figcaption {
   margin-right: 30px;
   border: solid 4px black;
   transform: rotate(-20deg);
+}
+
+.book-container{
+  height: 300px;
+  padding-top: 30px;
+  background: linear-gradient(to bottom left, lightgrey, grey);
+  display: flex;
+}
+
+.book-text-container{
+  width: 60%;
+  margin-left: 10%;
+}
+
+.book-image-container{
+  position: relative;
+  width: 25%;
+}
+
+#book-image{
+  position: absolute;
+  bottom:5%;
+  transform: rotate(-20deg);
+}
+
+#book-image:hover{
+  transform: rotate(0deg);
+}
+
+.grid-3{
+  background-color: yellow;
+  margin-top: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-around;
+}
+
+.background-linear-grey{
+  background: linear-gradient(to bottom left, lightgrey, grey);
 }
