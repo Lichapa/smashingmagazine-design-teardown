@@ -1,7 +1,7 @@
 # Design Teardown
 This project consists of building a heatmap of the Smashing magazine website
 
-# [Screenshot]
+# Screenshot
 <img src='./images/screenshot.png'>
 
 # Live Demo
