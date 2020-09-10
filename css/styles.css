@@ -51,19 +51,16 @@ nav > a {
 
 footer {
   background-color: #5a5a5a;
-  align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 ul {
   list-style: none;
-  display: inline-flex;
   padding-left: 10%;
 }
 
 footer > ul {
-  justify-content: center;
   width: 80%;
 }
 
@@ -121,10 +118,14 @@ nav > a:hover {
 }
 
 .profile {
-  flex-direction: column;
   width: 50%;
   background: linear-gradient(to bottom left, lightgrey, grey);
   height: 600px;
+}
+
+.profile,
+.articles1  {
+  flex-direction: column;
 }
 
 .article-line-photo img,
@@ -260,16 +261,25 @@ figcaption {
   padding: 40px 23%;
 }
 
-.articles1 {
-  flex-direction: column;
-}
-
 .article-line1 {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 30px 10%;
   align-items: flex-end;
+}
+
+.article-line1,
+.article-line2-small,
+ul {
+  display: inline-flex;
+}
+
+.article-line1,
+.article-line2-small {
+  justify-content: space-between;
+}
+
+.article-line1,
+.article-line2-small {
+  flex-direction: row;
 }
 
 .article-line2 {
@@ -279,10 +289,11 @@ figcaption {
 }
 
 .article-line2-small {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 10px 10%;
+}
+
+.article-line2-small,
+footer  {
   align-items: center;
 }
 
@@ -336,7 +347,8 @@ figcaption {
   grid-template-columns: repeat(3, 33.3%);
 }
 
-.last-ul {
+.last-ul,
+footer > ul {
   justify-content: center;
 }
 
